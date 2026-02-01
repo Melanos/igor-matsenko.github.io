@@ -1,5 +1,7 @@
 # Igor Matsenko
 
+[View My GitHub Profile](https://github.com/Melanos) | [Professional Services](/services)
+
 **IT DevOps Eng. Lead – AIOps & GenAI**  
 Automating Enterprise Operations | Reducing Incidents & MTTR
 
