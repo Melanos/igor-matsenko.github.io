@@ -109,7 +109,7 @@ I'm always interested in connecting about:
 - Building high-performing engineering teams and platforms
 - Real-world use cases for GenAI in IT operations
 
-**[LinkedIn](https://linkedin.com/in/igor-m-20b625102)** | **[GitHub](https://github.com/Melanos)** | **[Email](mailto:igor.01013554@gmail.com)**
+**[LinkedIn](https://linkedin.com/in/igor-m-20b625102)** | **[GitHub](https://github.com/Melanos)** | **[Email](mailto:igor@im-ai.tech)**
 
 ---
 
