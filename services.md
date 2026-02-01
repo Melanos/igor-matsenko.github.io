@@ -1,169 +1,157 @@
 ---
 layout: default
-title: Services | Igor Matsenko
----
+title: Services | Igor Matsenko - IT & Consulting---
 
 # Professional Services
 
-Leveraging 11+ years of experience in enterprise IT operations and local consulting, I specialize in AI-driven automation solutions, AIOps implementation, and enterprise workflow optimization. My background includes extensive network infrastructure consulting work throughout Northeast Ohio.
+
+
+**11+ years** of enterprise IT operations and local consulting expertise. Specializing in AI-driven automation, AIOps, and enterprise workflow optimization.
+
 ---
 
-## AI & Intelligent Automation
+## 🤖 AI & Intelligent Automation
 
 ### AI Agent Development
-- Custom AI agents using Microsoft Copilot Studio and Power Automate
-- Enterprise email automation and intelligent routing systems
+**Technologies:** Microsoft Copilot Studio, Power Automate, Microsoft Graph API, Azure, Python
+
+- Custom AI agents for enterprise workflows
+- Email automation with intelligent routing and classification
 - Context-aware LLM integration with business data
-- Human-in-the-loop workflow design for trust and reliability
+- Human-in-the-loop workflow design
+- Adaptive card UX development
 
 ### AIOps Implementation
-- End-to-end AIOps solution design and deployment
-- AI-powered incident classification and response automation
-- Telemetry analysis and predictive analytics integration
-- Integration with existing monitoring platforms (Splunk, Dynatrace)
+**Platforms:** Splunk, Dynatrace, Azure Monitor, Power Automate
 
-**Key Deliverables:**
+- End-to-end AIOps solution design
+- AI-powered incident classification and response
+- Telemetry analysis and predictive analytics
+- Alert correlation and noise reduction
+
+**Proven Results:**
 - 50-60% reduction in response times
-- Automated handling of routine requests
+- 60% of routine requests automated
 - 94%+ accuracy in incident classification
-- Adaptive card UX for seamless user experience
 
 ---
 
-## Network Engineering & Infrastructure
-
-**Note:** While my current focus is on AI/automation consulting, I have extensive background in network infrastructure from years of local consulting work installing and configuring network equipment throughout Northeast Ohio.
-
-### Network Design & Optimization
-- Enterprise campus and data center network architecture
-- Cisco switching and routing (Catalyst, Nexus, 9000 series)
-- SD-WAN and Meraki cloud-managed solutions
-- Network Access Control (NAC) implementation with ISE
-
-### Infrastructure Support
-- 24/7 production environment troubleshooting
-- Load balancer configuration (F5, A10)
-- Firewall management (Palo Alto, Cisco ASA)
-- Multi-site connectivity and redundancy planning
-
-### Security Solutions
-- Network segmentation and microsegmentation
-- Zero Trust Network Access implementation
-- Security policy design and enforcement
-- Compliance and audit support
-
----
-
-## Automation & DevOps
+## 🔧 Automation & DevOps Engineering
 
 ### Python & Ansible Automation
-- Custom Python scripts for network automation and monitoring
-- Ansible playbook development for configuration management
-- Multi-threaded solutions for large-scale deployments (800+ devices)
+**Skills:** Python (multithreading, async), Ansible (playbooks, AAP/Tower), REST APIs, JSON
+
+- Network automation scripts (800+ device deployments)
+- Multi-threaded solutions for large-scale operations
 - Self-service automation portals
+- Configuration management and compliance
+- Integration with Teams, Slack, and ticketing systems
+
+**Example Projects:**
+- NAC deployment automation (34,800 ports, saved 1000+ hours)
+- Daily config backups for 800+ devices
+- Self-service ACL playbooks with scheduling
+- Biweekly compliance reporting to Teams
 
 ### CI/CD Pipeline Development
-- Azure DevOps (AzDo) pipeline configuration
+**Tools:** Azure DevOps, Jenkins, Git, Ansible, Chef
+
+- Pipeline configuration and optimization
 - Infrastructure as Code (IaC) implementation
 - Automated testing and deployment workflows
-- GitOps and version control best practices
-
-### Custom Tooling
-- Network scanner and inventory management tools
-- Automated configuration backup systems
-- Compliance verification scripts
-- Real-time reporting and alerting systems
-
-**Sample Projects:**
-- Automated NAC deployment across 34,800 ports (saving 1000+ engineering hours)
-- Self-service ACL playbook with automated scheduling
-- Daily configuration backups for 800+ devices
-- Biweekly NAC compliance reporting to Teams
+- GitOps best practices
 
 ---
 
-## Training & Knowledge Transfer
+## 🌐 Network Infrastructure (Background)
+
+**Note:** While my current focus is AI/automation consulting, I have extensive network infrastructure experience from years of local consulting throughout Northeast Ohio.
+
+### Network Services
+**Equipment:** Cisco Catalyst/Nexus switches, Palo Alto firewalls, F5/A10 load balancers
+
+- Rack and stack installations
+- Cable management and documentation
+- Switch/router configuration (Catalyst, Nexus 9000 series)
+- SD-WAN and Meraki cloud-managed deployments
+- NAC/ISE implementation
+- Firewall management and policy design
+
+### Physical Infrastructure
+- Equipment installation and cabling
+- Data center layout and organization
+- On-site troubleshooting and support
+- Multi-site connectivity setup
+
+---
+
+## 📚 Training & Knowledge Transfer
 
 ### Technical Workshops
-- Python automation fundamentals and advanced techniques
+- Python automation (fundamentals to advanced)
 - Ansible for network engineers
 - API integration and webhook development
-- Best practices for coding in network operations
+- Best practices for network automation
 
-### Mentorship Programs
+### Mentorship
 - One-on-one coaching for engineers and interns
 - Code review and development guidance
-- Hands-on lab exercises and real-world scenarios
-- Documentation and knowledge base development
+- Hands-on labs and real-world scenarios
+- Documentation and KBA development
 
 ---
 
-## Cloud & Platform Expertise
+## ☁️ Cloud & Platform Expertise
 
-### Cloud Services
-- AWS infrastructure design and migration (pursuing AWS Associate certification)
-- Azure cloud integration and management
-- Hybrid cloud connectivity solutions
-- Cloud-native application support
-
-### Platform Management
-- Cisco ACI, NSX-T, and APIC
-- DNA Center and Prime Infrastructure
-- SolarWinds, Nagios, and monitoring platforms
-- Ansible Automation Platform (AAP/Tower)
+**Cloud:** AWS (pursuing certification), Azure
+**Platforms:** Cisco ACI, NSX-T, APIC, DNA Center, Ansible AAP
+**Monitoring:** SolarWinds, Nagios, Splunk, Dynatrace
 
 ---
 
-## Engagement Models
+## 💼 Engagement Models
 
-### Project-Based Consulting
-Fixed-scope projects with defined deliverables and timelines. Ideal for:
-- Network refresh and migration projects
-- Automation implementation
-- NAC/ISE deployments
+### 📋 Project-Based Consulting
+Fixed-scope with defined deliverables:
+- Automation implementation projects
 - AI agent proof-of-concepts
+- Network infrastructure installations
+- Platform migrations
 
-### Retainer Services
-Ongoing support and optimization for:
-- 24/7 on-call engineering support
+### 🔄 Retainer Services
+Ongoing support:
+- 24/7 on-call engineering
 - Continuous automation development
-- Platform maintenance and upgrades
-- Strategic planning and roadmap development
+- Platform maintenance
+- Strategic planning
 
-### Training & Workshops
-Customized training programs:
-- Half-day to multi-day workshops
+### 🎓 Training Programs
+Customized workshops:
+- Half-day to multi-day sessions
 - Virtual or on-site delivery
 - Hands-on labs included
-- Custom curriculum based on your team's needs
+- Custom curriculum
 
 ---
 
-## Why Work With Me?
+## ✨ Why Work With Me?
 
-✓ **Proven Track Record** - 11+ years supporting 24/7 enterprise environments at Fortune 500 companies
-
-✓ **Full-Stack Expertise** - From network infrastructure to AI/ML integration
-
-✓ **Automation-First Approach** - Saved 1000+ engineering hours through intelligent automation
-
-✓ **Excellent Communicator** - Strong technical writing and presentation skills
-
-✓ **Fast Learner** - Rapidly adapt to new technologies and complex environments
-
-✓ **Results-Driven** - Focus on measurable business outcomes
+✓ **11+ years** supporting Fortune 500 enterprise environments  
+✓ **Full-stack expertise** from physical infrastructure to AI/ML  
+✓ **Automation-first** approach (saved 1000+ engineering hours)  
+✓ **Strong communicator** with excellent documentation skills  
+✓ **Fast learner** adapting to new technologies quickly  
+✓ **Results-driven** focus on measurable outcomes
 
 ---
 
-## Let's Connect
+## 📧 Let's Connect
 
 Interested in discussing how I can help your organization?
 
-📧 **Email:** [igor@im-ai.tech](mailto:igor@im-ai.tech)
-
-💼 **LinkedIn:** [linkedin.com/in/igor-m-20b625102](https://linkedin.com/in/igor-m-20b625102)
-
-🔗 **GitHub:** [github.com/Melanos](https://github.com/Melanos)
+**Email:** [igor@im-ai.tech](mailto:igor@im-ai.tech)  
+**LinkedIn:** [linkedin.com/in/igor-m-20b625102](https://linkedin.com/in/igor-m-20b625102)  
+**GitHub:** [github.com/Melanos](https://github.com/Melanos)
 
 ---
 
