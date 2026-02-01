@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Services | Igor Matsenko - IT & Consulting---
+title: Services | Igor Matsenko - IT & Consulting
+---
 
 # Professional Services
 
