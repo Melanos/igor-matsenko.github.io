@@ -10,38 +10,38 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'AI-Powered Email Assistant',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'Enterprise-scale AI agent built with Microsoft Copilot Studio and Power Automate that intelligently routes and responds to thousands of email requests. Achieves 94%+ accuracy in incident classification with human-in-the-loop workflow design, reducing response times by 50-60% and automating 60% of routine requests.',
+    link: { href: '#', label: 'Progressive Insurance' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Network Access Control (NAC) Automation',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Python-based automation framework leveraging multithreading to deploy Network Access Control across 800+ switches and 34,800 ports. Estimated savings of 1,000+ engineering hours through intelligent automation, automated notifications to Microsoft Teams, and standardized configuration management.',
+    link: { href: '#', label: 'Python + Ansible' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Self-Service ACL Playbook',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'Ansible automation platform playbook enabling test servers to perform printer testing through self-service ACL updates. Features scheduling constraints for execution outside business hours, change request integration, and automated deployment via Ansible Automation Platform (AAP).',
+    link: { href: '#', label: 'Ansible AAP' },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'AIOps Incident Classification System',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      'End-to-end AIOps solution integrating Splunk, Dynatrace, and Azure Monitor for AI-powered incident classification and response. Implements alert correlation, noise reduction, and telemetry analysis with predictive analytics to dramatically improve system reliability and operational performance.',
+    link: { href: '#', label: 'Splunk + Dynatrace' },
     logo: logoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Automated Configuration Backup System',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'Daily automated configuration backups for 800+ network devices with intelligent retention policies (15-day rolling window). Includes automated lab device configuration restoration using Ansible, ensuring no changes are made when configurations match golden standards.',
+    link: { href: '#', label: 'Python + Ansible' },
     logo: logoOpenShuttle,
   },
 ]
@@ -59,14 +59,14 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Automation projects that have saved thousands of engineering hours and transformed enterprise IT operations.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Automation projects that solve real enterprise problems."
+      intro="Over the years, I've worked on numerous automation initiatives that have dramatically improved operational efficiency, reduced response times, and saved thousands of engineering hours. Here are some of the key projects I'm most proud of—each one solving real problems for Fortune 500 enterprise operations."
     >
       <ul
         role="list"
@@ -74,7 +74,7 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 src={project.logo}
                 alt=""

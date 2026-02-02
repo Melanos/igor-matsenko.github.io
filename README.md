@@ -1,16 +1,25 @@
 # Igor Matsenko - Personal Website
 
-This is my personal portfolio website built with GitHub Pages and Jekyll.
+Professional portfolio website for Igor Matsenko, IT Systems Engineer Lead specializing in AI-driven automation, AIOps, and enterprise workflow optimization.
 
-Visit: [igormatsenko.github.io](https://igor-matsenko.github.io)
+## 🚀 Built With
 
-## About
-AIOps & AI Automation Engineer specializing in enterprise workflow automation and intelligent IT operations.
+- **Next.js 14** - React framework with App Router
+- **Tailwind CSS** - Utility-first CSS framework
+- **MDX** - Markdown with JSX for blog articles
+- **GitHub Pages** - Hosting with custom domain (im-ai.tech)
 
-## Technologies
-- GitHub Pages
-- Jekyll (Minimal theme)
-- Markdown
+## 🛠️ Local Development
 
-## License
-© 2026 Igor Matsenko. All rights reserved.
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run start

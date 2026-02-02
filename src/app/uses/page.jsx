@@ -25,85 +25,103 @@ function Tool({ title, href, children }) {
 
 export const metadata = {
   title: 'Uses',
-  description: 'Software I use, gadgets I love, and other things I recommend.',
+  description: 'The tools, technologies, and platforms I use to build intelligent automation solutions.',
 }
 
 export default function Uses() {
   return (
     <SimpleLayout
-      title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      title="Tools and technologies I use to build intelligent automation solutions."
+      intro="I'm often asked about the tech stack I use for enterprise automation and AIOps. Here's a comprehensive list of the tools, platforms, and technologies that power my work—from AI agent development to network automation."
     >
       <div className="space-y-20">
-        <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+        <ToolsSection title="AI & Automation Platforms">
+          <Tool title="Microsoft Copilot Studio">
+            My primary platform for building AI agents. The visual workflow designer combined with natural language understanding makes it perfect for enterprise email automation and intelligent routing systems.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool title="Power Automate">
+            Essential for workflow orchestration. I use it daily to integrate AI agents with Microsoft Graph API, Teams, and other enterprise systems. The connector ecosystem is unmatched.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
+          <Tool title="Ansible Automation Platform (AAP)">
+            My go-to for infrastructure automation. I've built dozens of playbooks for network configuration, NAC deployment, and self-service automation portals. The Tower/AAP interface makes it accessible to operations teams.
           </Tool>
-          <Tool title="Apple Magic Trackpad">
-            Something about all the gestures makes me feel like a wizard with
-            special powers. I really like feeling like a wizard with special
-            powers.
-          </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
+          <Tool title="Azure DevOps">
+            For CI/CD pipelines, project management, and version control. I use Azure Boards extensively to track automation projects and collaborate with cross-functional teams.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+
+        <ToolsSection title="Development & Scripting">
+          <Tool title="Python">
+            My language of choice for automation. I leverage multithreading for large-scale network operations, async for API integrations, and libraries like Netmiko for network device automation. My NAC deployment script that saved 1,000+ hours was built entirely in Python.
           </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
+          <Tool title="PowerShell">
+            Critical for Windows automation and Active Directory operations. I use it for system administration tasks and integrating with Microsoft APIs.
           </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool title="Visual Studio Code">
+            My daily driver for coding. The Python and Ansible extensions, along with GitHub Copilot, make development incredibly efficient.
           </Tool>
-        </ToolsSection>
-        <ToolsSection title="Design">
-          <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
+          <Tool title="Git & GitHub">
+            Version control is non-negotiable. All my automation code lives in Git repositories, and I use GitHub Actions for testing and deployment workflows.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
+
+        <ToolsSection title="AIOps & Monitoring">
+          <Tool title="Splunk">
+            Enterprise log aggregation and analysis. I build custom dashboards, alerts, and integrations that feed into our AIOps incident classification system.
           </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
+          <Tool title="Dynatrace">
+            Application performance monitoring with AI-powered insights. I use it for telemetry analysis and predictive analytics in our AIOps workflows.
           </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
+          <Tool title="Azure Monitor">
+            Cloud-native monitoring for Azure resources. Integrates seamlessly with Power Automate for automated incident response.
           </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+          <Tool title="SolarWinds">
+            Network monitoring and configuration management. I've automated report generation and alert integration with our ticketing systems.
+          </Tool>
+        </ToolsSection>
+
+        <ToolsSection title="Network Infrastructure">
+          <Tool title="Cisco Catalyst & Nexus Switches">
+            My foundation in network engineering. I've configured and managed hundreds of Catalyst 2900/4900/6500 and Nexus 9000 series switches in production environments.
+          </Tool>
+          <Tool title="Palo Alto Firewalls">
+            For enterprise security. I handle policy design, configuration, and automation of firewall rule deployments.
+          </Tool>
+          <Tool title="Cisco ISE (Identity Services Engine)">
+            Network Access Control platform. I've automated ISE policy deployment and integrated it with Active Directory for zero-trust network access.
+          </Tool>
+          <Tool title="Meraki & SD-WAN">
+            Cloud-managed networking. I use the Meraki API extensively for automated provisioning and monitoring.
+          </Tool>
+        </ToolsSection>
+
+        <ToolsSection title="Collaboration & Documentation">
+          <Tool title="Microsoft Teams">
+            More than just chat—I integrate automation workflows that post notifications, alerts, and reports directly to Teams channels. It's become the central hub for operational awareness.
+          </Tool>
+          <Tool title="Jira">
+            Project and ticket tracking. I've built automations that create, update, and close Jira tickets based on incident classification from our AI agents.
+          </Tool>
+          <Tool title="Confluence">
+            Documentation platform. I maintain runbooks, architecture diagrams, and knowledge base articles that support automation initiatives.
+          </Tool>
+          <Tool title="Markdown">
+            All my documentation and README files are in Markdown. Clean, version-controllable, and universally compatible.
+          </Tool>
+        </ToolsSection>
+
+        <ToolsSection title="Cloud & APIs">
+          <Tool title="Microsoft Graph API">
+            The backbone of my AI email assistant. I use it to read emails, classify incidents, route requests, and send automated responses.
+          </Tool>
+          <Tool title="Azure">
+            Cloud platform for hosting automation workflows, storing configurations, and running serverless functions. Currently pursuing AWS Associate certification to broaden cloud expertise.
+          </Tool>
+          <Tool title="REST APIs">
+            I work with REST APIs daily—from network device APIs to enterprise SaaS platforms. Postman is my go-to for testing and documentation.
+          </Tool>
+          <Tool title="JSON">
+            The lingua franca of modern APIs. I parse, manipulate, and generate JSON in nearly every automation project.
           </Tool>
         </ToolsSection>
       </div>
