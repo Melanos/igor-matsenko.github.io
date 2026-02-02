@@ -136,49 +136,24 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-<<<<<<< HEAD
       company: 'Progressive',
       title: 'Enterprise Automation Engineer',
       logo: logoPlanetaria,
       start: '2020',
-=======
-      company: 'Progressive Insurance',
-      title: 'IT Systems Engineer Lead - Network Product Engineering',
-      logo: logoPlanetaria,
-      start: '2023',
->>>>>>> 17c7b61 (making changes)
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-<<<<<<< HEAD
       company: 'ETS',
       title: 'AI Engineer',
       logo: logoAirbnb,
       start: '2018',
       end: '2020',
     },
-    {
-    
-=======
-      company: 'Progressive Insurance',
-      title: 'IT Systems Engineer Lead - Network Product Engineering',
-      logo: logoAirbnb,
-      start: '2020',
-      end: '2023',
-    },
-    {
-      company: 'Gamut (Acquired)',
-      title: 'IT Systems Engineer Sr. - Network & Telecom',
-      logo: logoStarbucks,
-      start: '2015',
-      end: '2019',
-    },
   ]
 
->>>>>>> 17c7b61 (making changes)
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -262,7 +237,6 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-<<<<<<< HEAD
 Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Igor, an enterprise automation engineer based in Ohio. I specialize in developing AI-powered automation solutions using Microsoft Power Automate, Copilot Studio, and Azure, helping organizations streamline their workflows and boost productivity.
@@ -270,51 +244,24 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink href="#" aria-label="Follow on X" icon={XIcon} /> */}
             <SocialLink
-              href=https://www.instagram.com/igor.matsenko/#"
+              href="https://www.instagram.com/igor.matsenko/#"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href=https://github.com/Melanos#"
-=======
-            IT Systems Engineer, Automation Architect, and Problem Solver.
-          </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Igor, an IT Systems Engineer Lead based in Ohio, specializing in AI-driven automation 
-            and enterprise workflow optimization. With 11+ years of experience supporting Fortune 500 
-            companies in 24/7 production environments, I build intelligent solutions that save thousands 
-            of engineering hours and dramatically improve operational efficiency.
-          </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Currently at Progressive Insurance, I lead automation initiatives, develop AI-powered email 
-            assistants using Microsoft Copilot Studio and Power Automate, and architect AIOps solutions 
-            that reduce response times by 50-60%. My philosophy: <strong>Resourcefulness</strong> — I will 
-            find a solution to any problem.
-          </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://github.com/Melanos"
->>>>>>> 17c7b61 (making changes)
+              href="https://github.com/Melanos#"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-<<<<<<< HEAD
-              href=https://www.linkedin.com/in/igor-matsenko/#"
-=======
-              href="https://linkedin.com/in/igor-m-20b625102"
->>>>>>> 17c7b61 (making changes)
+              href="https://www.linkedin.com/in/igor-matsenko/#"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
         </div>
       </Container>
-<<<<<<< HEAD
       {/* <Photos /> */}
-=======
-      {/* Photos section removed - add your professional photo later */}
->>>>>>> 17c7b61 (making changes)
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
