@@ -19,6 +19,13 @@ import logoPlanetaria from '@/images/logos/progressive-3.svg'
 // import image3 from '@/images/photos/image-3.jpg'
 // import image4 from '@/images/photos/image-4.jpg'
 // import image5 from '@/images/photos/image-5.jpg'
+import logoProgressive from '@/images/logos/progressive-3.svg'
+import logoETS from '@/images/logos/progressive-3.svg'  // Using same logo for now
+import logoPython from '@/images/logos/python.svg'
+import logoAnsible from '@/images/logos/ansible.svg'
+import logoSplunk from '@/images/logos/splunk.svg'
+import logoCisco from '@/images/logos/cisco-2.svg'
+
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -138,7 +145,7 @@ function Resume() {
     {
       company: 'Progressive',
       title: 'Enterprise Automation Engineer',
-      logo: logoPlanetaria,
+      logo: logoProgressive,
       start: '2020',
       end: {
         label: 'Present',
@@ -146,13 +153,44 @@ function Resume() {
       },
     },
     {
-      company: 'ETS',
+      company: 'Progressive',
       title: 'AI Engineer',
-      logo: logoAirbnb,
+      logo: logoProgressive,
       start: '2018',
       end: '2020',
     },
   ]
+
+  function TechStack() {
+  const technologies = [
+    { name: 'Python', logo: logoPython },
+    { name: 'Ansible', logo: logoAnsible },
+    { name: 'Splunk', logo: logoSplunk },
+    { name: 'Cisco', logo: logoCisco },
+  ]
+
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        Technologies
+      </h2>
+      <div className="mt-6 grid grid-cols-4 gap-4">
+        {technologies.map((tech) => (
+          <div
+            key={tech.name}
+            className="flex flex-col items-center justify-center p-2"
+            title={tech.name}
+          >
+            <div className="relative h-10 w-10 flex items-center justify-center">
+              <Image src={tech.logo} alt={tech.name} className="h-8 w-8" unoptimized />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
@@ -202,32 +240,32 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+// function Photos() {
+//   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+//   return (
+//     <div className="mt-16 sm:mt-20">
+//       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+//         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+//           <div
+//             key={image.src}
+//             className={clsx(
+//               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+//               rotations[imageIndex % rotations.length],
+//             )}
+//           >
+//             <Image
+//               src={image}
+//               alt=""
+//               sizes="(min-width: 640px) 18rem, 11rem"
+//               className="absolute inset-0 h-full w-full object-cover"
+//             />
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   )
+// }
 
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
@@ -243,6 +281,8 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           </p>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink href="#" aria-label="Follow on X" icon={XIcon} /> */}
+            <TechStack />
+            <Resume />
             <SocialLink
               href="https://www.instagram.com/igor.matsenko/#"
               aria-label="Follow on Instagram"
