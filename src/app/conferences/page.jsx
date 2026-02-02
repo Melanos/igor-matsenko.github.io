@@ -84,27 +84,27 @@ export default function Conferences() {
 
   const upcomingConferences = [
     {
-      name: 'AWS re:Invent 2026',
-      date: 'November 2026',
+      name: 'NVIDIA GTC 2026',
+      date: 'March 2026',
       description:
-        'Planning to attend sessions on AWS AI services, serverless automation, and cloud infrastructure optimization. Interested in exploring AWS integration with enterprise automation workflows.',
-      link: 'https://reinvent.awsevents.com/',
+        'Planning to attend the premier AI and GPU computing conference. Interested in learning about the latest developments in AI infrastructure, large language models, and enterprise AI deployment strategies.',
+      link: 'https://www.nvidia.com/gtc/',
       role: 'Planning to Attend',
     },
     {
-      name: 'DevOps Enterprise Summit 2026',
-      date: 'October 2026',
+      name: 'AI Conference 2026',
+      date: '2026',
       description:
-        'Looking forward to learning about enterprise DevOps transformations, AIOps implementations, and organizational change management in large-scale automation projects.',
-      link: 'https://events.itrevolution.com/',
-      role: 'Planning to Attend',
+        'Exploring attendance at this leading artificial intelligence conference to learn about cutting-edge AI applications in enterprise automation, machine learning operations, and AI governance.',
+      link: 'https://theaiconference.com/',
+      role: 'Considering',
     },
     {
-      name: 'Microsoft Build 2026',
-      date: 'May 2026',
+      name: 'AI Con',
+      date: '2026',
       description:
-        'Excited to explore the latest Microsoft developer tools, Azure AI updates, and enterprise automation platform enhancements. Planning to network with other Power Platform professionals.',
-      link: 'https://build.microsoft.com/',
+        'Planning to attend to explore the latest trends in artificial intelligence, AI-powered automation, and practical enterprise AI implementations. Looking forward to networking with AI practitioners and learning about real-world use cases.',
+      link: 'https://ai-con.io/',
       role: 'Planning to Attend',
     },
   ]
