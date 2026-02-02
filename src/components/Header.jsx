@@ -14,7 +14,8 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import companyLogo from '@/images/logos/logo.png'
+// Using public folder for static export
+const companyLogo = '/images/logo.png'
 
 function CloseIcon(props) {
   return (
