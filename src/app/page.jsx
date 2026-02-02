@@ -15,11 +15,6 @@ import logoAirbnb from '@/images/logos/progressive-3.svg'
 // import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/progressive-3.svg'
 // import logoStarbucks from '@/images/logos/starbucks.svg'
-import cableManagement from '@/images/photos/cable-management.jpg'
-import bulb from '@/images/photos/bulb.jpg'
-import comfort from '@/images/photos/comfort.jpg'
-import creativity from '@/images/photos/creativity.jpg'
-import image2 from '@/images/photos/image-2.jpg'
 import logoProgressive from '@/images/logos/progressive-3.svg'
 import logoETS from '@/images/logos/progressive-3.svg'  // Using same logo for now
 import logoPython from '@/images/logos/python.svg'
@@ -249,21 +244,30 @@ function Resume() {
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  const images = [
+    '/images/photos/cable-management.jpg',
+    '/images/photos/bulb.jpg',
+    '/images/photos/comfort.jpg',
+    '/images/photos/creativity.jpg',
+    '/images/photos/image-2.jpg',
+  ]
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[cableManagement, bulb, comfort, creativity, image2].map((image, imageIndex) => (
+        {images.map((imageSrc, imageIndex) => (
           <div
-            key={image.src}
+            key={imageSrc}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
             )}
           >
             <Image
-              src={image}
+              src={imageSrc}
               alt=""
+              width={288}
+              height={320}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
