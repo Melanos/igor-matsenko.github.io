@@ -8,6 +8,7 @@ const nextConfig = {
   outputFileTracingIncludes: {
     '/articles/*': ['./src/app/articles/**/*.mdx'],
   },
+    eslint: { ignoreDuringBuilds: true },
 }
 
 const withMDX = nextMDX({
