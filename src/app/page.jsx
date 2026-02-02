@@ -7,7 +7,6 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
@@ -116,18 +115,16 @@ function Newsletter() {
         <span className="ml-3">Stay up to date</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+        Get notified when I publish something new about AI automation, AIOps, and enterprise workflow optimization.
       </p>
-      <div className="mt-6 flex items-center">
-        <span className="flex min-w-0 flex-auto p-px">
-          <input
-            type="email"
-            placeholder="Email address"
-            aria-label="Email address"
-            required
-            className="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
-          />
-        </span>
+      <div className="mt-6 flex">
+        <input
+          type="email"
+          placeholder="Email address"
+          aria-label="Email address"
+          required
+          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
+        />
         <Button type="submit" className="ml-4 flex-none">
           Join
         </Button>
@@ -136,56 +133,27 @@ function Newsletter() {
   )
 }
 
-function Role({ role }) {
-  let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
-  let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
-
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
-
-  return (
-    <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-      </div>
-      <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
-        </dd>
-        <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
-        </dd>
-        <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
-        >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
-        </dd>
-      </dl>
-    </li>
-  )
-}
-
 function Resume() {
   let resume = [
     {
+<<<<<<< HEAD
       company: 'Progressive',
       title: 'Enterprise Automation Engineer',
       logo: logoPlanetaria,
       start: '2020',
+=======
+      company: 'Progressive Insurance',
+      title: 'IT Systems Engineer Lead - Network Product Engineering',
+      logo: logoPlanetaria,
+      start: '2023',
+>>>>>>> 17c7b61 (making changes)
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
+<<<<<<< HEAD
       company: 'ETS',
       title: 'AI Engineer',
       logo: logoAirbnb,
@@ -194,6 +162,23 @@ function Resume() {
     },
     {
     
+=======
+      company: 'Progressive Insurance',
+      title: 'IT Systems Engineer Lead - Network Product Engineering',
+      logo: logoAirbnb,
+      start: '2020',
+      end: '2023',
+    },
+    {
+      company: 'Gamut (Acquired)',
+      title: 'IT Systems Engineer Sr. - Network & Telecom',
+      logo: logoStarbucks,
+      start: '2015',
+      end: '2019',
+    },
+  ]
+
+>>>>>>> 17c7b61 (making changes)
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -202,10 +187,39 @@ function Resume() {
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
+          <li key={roleIndex} className="flex gap-4">
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+            </div>
+            <dl className="flex flex-auto flex-wrap gap-x-2">
+              <dt className="sr-only">Company</dt>
+              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                {role.company}
+              </dd>
+              <dt className="sr-only">Role</dt>
+              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                {role.title}
+              </dd>
+              <dt className="sr-only">Date</dt>
+              <dd
+                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                aria-label={`${role.start.label ?? role.start} until ${
+                  role.end.label ?? role.end
+                }`}
+              >
+                <time dateTime={role.start.dateTime ?? role.start}>
+                  {role.start.label ?? role.start}
+                </time>{' '}
+                <span aria-hidden="true">—</span>{' '}
+                <time dateTime={role.end.dateTime ?? role.end}>
+                  {role.end.label ?? role.end}
+                </time>
+              </dd>
+            </dl>
+          </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="/resume.pdf" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -223,7 +237,7 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-9/10 w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -248,6 +262,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+<<<<<<< HEAD
 Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Igor, an enterprise automation engineer based in Ohio. I specialize in developing AI-powered automation solutions using Microsoft Power Automate, Copilot Studio, and Azure, helping organizations streamline their workflows and boost productivity.
@@ -261,18 +276,45 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
             />
             <SocialLink
               href=https://github.com/Melanos#"
+=======
+            IT Systems Engineer, Automation Architect, and Problem Solver.
+          </h1>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            I'm Igor, an IT Systems Engineer Lead based in Ohio, specializing in AI-driven automation 
+            and enterprise workflow optimization. With 11+ years of experience supporting Fortune 500 
+            companies in 24/7 production environments, I build intelligent solutions that save thousands 
+            of engineering hours and dramatically improve operational efficiency.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            Currently at Progressive Insurance, I lead automation initiatives, develop AI-powered email 
+            assistants using Microsoft Copilot Studio and Power Automate, and architect AIOps solutions 
+            that reduce response times by 50-60%. My philosophy: <strong>Resourcefulness</strong> — I will 
+            find a solution to any problem.
+          </p>
+          <div className="mt-6 flex gap-6">
+            <SocialLink
+              href="https://github.com/Melanos"
+>>>>>>> 17c7b61 (making changes)
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
+<<<<<<< HEAD
               href=https://www.linkedin.com/in/igor-matsenko/#"
+=======
+              href="https://linkedin.com/in/igor-m-20b625102"
+>>>>>>> 17c7b61 (making changes)
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
         </div>
       </Container>
+<<<<<<< HEAD
       {/* <Photos /> */}
+=======
+      {/* Photos section removed - add your professional photo later */}
+>>>>>>> 17c7b61 (making changes)
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
@@ -283,6 +325,18 @@ Enterprise Automation Engineer & AI Operations Specialist.          </h1>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Resume />
+            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+              <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                Open for Opportunities
+              </h2>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                Currently available for consulting work and open to discussing new opportunities 
+                in AI automation, AIOps, and enterprise workflow optimization.
+              </p>
+              <Button href="mailto:igor@im-ai.tech" variant="secondary" className="group mt-6 w-full">
+                Get in touch
+              </Button>
+            </div>
           </div>
         </div>
       </Container>
