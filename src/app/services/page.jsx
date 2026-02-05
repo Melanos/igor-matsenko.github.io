@@ -163,26 +163,64 @@ export default function Services() {
           />
         </ServiceCategory>
 
-        <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-          <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-            <span className="ml-3">Ready to get started?</span>
+        <div className="rounded-2xl border border-zinc-100 p-8 dark:border-zinc-700/40">
+          <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            Ready to get started?
           </h2>
-          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
             Currently available for consulting engagements and open to discussing new opportunities. 
             Let's talk about how AI automation and intelligent operations can transform your enterprise IT.
           </p>
-          <div className="mt-6 flex gap-4">
+          
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div>
+              <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Email</h3>
+              <a 
+                href="mailto:igor@im-ai.tech"
+                className="mt-2 block text-sm text-teal-500 hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300"
+              >
+                igor@im-ai.tech
+              </a>
+              <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                Response within 24 hours
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Connect</h3>
+              <div className="mt-2 space-y-1">
+                <a 
+                  href="https://linkedin.com/in/igor-m-20b625102"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-teal-500 hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300"
+                >
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://github.com/Melanos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-teal-500 hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="mailto:igor@im-ai.tech"
-              className="inline-flex items-center justify-center rounded-md bg-teal-500 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-md bg-teal-500 px-6 py-3 text-sm font-semibold text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors"
             >
-              Contact me
+              Send me an email
             </a>
             <a
               href="/projects"
-              className="inline-flex items-center justify-center rounded-md border border-zinc-200 px-4 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800"
+              className="inline-flex items-center justify-center rounded-md border border-zinc-200 px-6 py-3 text-sm font-semibold text-zinc-900 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
-              View projects
+              View my work
             </a>
           </div>
         </div>
